@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  zentao:
+    image: zbox
+    container_name: zbox
+    hostname: zbox
+    ports:
+      - "81:80"
+      - "3307:3306"
+    environment:
+      USER: root
+      PASSWD: "123456"
+    volumes:
+    - /opt/zbox:/opt/zbox/
